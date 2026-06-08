@@ -1,0 +1,120 @@
+/* RegisterPage.css */
+
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #dc2626;
+  --accent-hover: #b91c1c;
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(16, 24, 40, 0.08);
+}
+
+/* Page Container */
+.reg-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    180deg,
+    var(--bg) 0%,
+    #fde3a4 100%
+  );
+
+  padding: 20px;
+}
+
+/* Form Card */
+.reg-form {
+  width: 100%;
+  max-width: 420px;
+
+  background: var(--card);
+  padding: 30px;
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Heading */
+.reg-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.reg-input {
+  width: 100%;
+  padding: 14px 16px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-size: 16px;
+  outline: none;
+
+  transition: all 0.2s ease;
+}
+
+.reg-input::placeholder {
+  color: #9ca3af;
+}
+
+.reg-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+/* Register Button */
+.reg-btn {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    180deg,
+    var(--accent),
+    var(--accent-hover)
+  );
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.reg-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.reg-btn:active {
+  transform: translateY(1px);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .reg-form {
+    padding: 24px;
+  }
+
+  .reg-title {
+    font-size: 24px;
+  }
+}
