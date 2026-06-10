@@ -14,7 +14,7 @@ const RegisterPage = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/auth/register',
+        'https://forget-password-server-70vw.onrender.com/api/auth/register',
         { email, password }
       );
 

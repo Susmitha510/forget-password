@@ -14,7 +14,7 @@ const ResetPasswordPage = () => {
         try {
 
             await axios.post(
-                `http://localhost:5000/api/auth/reset-password/${token}`,
+                `https://forget-password-server-70vw.onrender.com/api/auth/reset-password/${token}`,
                 { password }
             );
 

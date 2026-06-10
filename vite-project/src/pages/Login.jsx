@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/auth/login',
+        'https://forget-password-server-70vw.onrender.com/api/auth/login',
         { email, password }
       );
 
